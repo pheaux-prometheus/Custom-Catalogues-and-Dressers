@@ -1,5 +1,5 @@
 # Custom Catalogues and Dressers
-(This is a work in progress; I will be adding and clarifying information for a while.)
+(This is a work in progress; all the information is added, but I will be working on formatting and adding links within the document.)
 
 This guide assumes you are using and are at least somewhat familiar with [Content Patcher](https://github.com/Pathoschild/StardewMods/blob/stable/ContentPatcher/docs/author-guide.md#readme) and modding Stardew Valley in general. I will provide links to the Stardew Valley wiki modding articles where relevant.
 
@@ -67,3 +67,6 @@ Example of a custom dresser (from my [Tackle Box](https://www.nexusmods.com/star
   }
 }
 ```
+
+### Console Command
+For ease of testing, the mods comes with a console command to reread the data in `pheaux.catalogues/catalogues` and `pheaux.catalogues/dressers`. Use Content Patcher's [`patch reload`](https://github.com/Pathoschild/StardewMods/blob/stable/ContentPatcher/docs/author-guide/troubleshooting.md#reload) command first, then use the command `pheaux.catalogues reload' to update the catalogue/dresser data.
