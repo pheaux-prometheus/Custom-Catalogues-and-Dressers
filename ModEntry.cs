@@ -142,7 +142,7 @@ namespace CustomFurnitureCatalogues
                         Helper.Events.Display.MenuChanged += Display_MenuChanged;
                 }
 
-                Monitor.Log($"Custom Catalogue and Dresser info has been reloaded:{cataloguelist.Count} catalogues and {dresserlist.Count} dressers.", LogLevel.Trace);
+                Monitor.Log($"Custom Catalogue and Dresser info has been reloaded: {cataloguelist.Count} catalogues and {dresserlist.Count} dressers.", LogLevel.Info);
             }
             else
             {
