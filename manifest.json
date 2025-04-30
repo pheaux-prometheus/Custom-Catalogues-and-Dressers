@@ -1,8 +1,8 @@
 {
     "Name": "Custom Catalogues and Dressers",
     "Author": "pheaux",
-    "Version": "1.0.0",
-    "Description": "Allows the creation of custom furniture catalogues for mod authors.",
+    "Version": "1.0.1",
+    "Description": "Allows the creation of custom catalogues and dressers for mod authors.",
     "UniqueID": "pheaux.customcatalogues",
     "EntryDll": "CustomFurnitureCatalogues.dll",
     "MinimumApiVersion": "4.0.0",
