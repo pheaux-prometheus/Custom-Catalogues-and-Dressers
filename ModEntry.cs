@@ -43,9 +43,11 @@ namespace CustomFurnitureCatalogues
             if (!Context.CanPlayerMove || !e.Button.IsActionButton()) return;
 
             //get object, return if none
-            var alsdkfj = Game1.player.GetToolLocation();
-
-            var o = Game1.player.currentLocation.getObjectAtTile((int)alsdkfj.X / 64, (int)alsdkfj.Y / 64, true);
+            var o = Game1.player.currentLocation.getObjectAtTile((int)e.Cursor.GrabTile.X, (int)e.Cursor.GrabTile.Y, true);
+            if (o == null)
+            {
+                o = Game1.player.currentLocation.getObjectAt((int)Game1.player.GetToolLocation().X, (int)Game1.player.GetToolLocation().Y, true);
+            }
             if (o == null) return;
 
             //if itemid has an entry then handle that elsewhere
